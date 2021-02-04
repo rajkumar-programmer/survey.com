@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://ashutosh-biotech.github.io/quizclasswise.in/logo.png" type="image/x-icon">
+  <title>Survey For Website</title>
+  <style>
+    body{
+      background-color: purple;
+    }
+
+    h2{
+      color: whitesmoke;
+    }
+
+    h3{
+      color: blanchedalmond;
+    }
+
+    button {
+      align-content: center;
+      text-align: center;
+      /* box-shadow: 5px 5px 5px rgb(90, 89, 89); */
+      text-decoration: underline;
+      background-color: red;
+      border-color: transparent;
+      color: whitesmoke;
+      cursor: pointer;
+      border-radius: 50px;
+      font-size: 20px;
+      padding: 20px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h2 id="greeting"></h2>
+    <h3>
+      I <b>Raj Kumar</b> is condonducting a <i>Survey</i> to make my next Website. <br>
+      You are welcomed to participate in this survey. <br>
+      <b><i>Click on button below to give the survey</i></b>
+    </h3>
+    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAATGD815UQlFOOEpMRjVIQUVGRzlPRFROVERQT1AwUC4u"
+      id="link">
+      <button class="button">
+        Give the Survey
+      </button>
+    </a>
+  </center>
+
+
+  <script>
+    var today = new Date();
+    var hourNow = today.getHours();
+    var greeting;
+    if (hourNow >= 18) {
+      greeting = "Good evening";
+    } else if (hourNow >= 12) {
+      greeting = "Good afternoon";
+    } else if (hourNow >= 0) {
+      greeting = "Good morning";
+    } else {
+      greeting = "Welcome";
+    }
+    document.getElementById("greeting").innerHTML = greeting;
+  </script>
+
+
+</body>
+
+</html>
